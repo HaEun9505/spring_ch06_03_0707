@@ -15,10 +15,10 @@ public class ApplicationConfig {
 		hobbys.add("운동");
 		hobbys.add("노래");
 		
-		//student: bean 이름
+		//생성자에 설정(constructor)
 		Student student = new Student("홍길동", 25, hobbys);
 		
-		//생성자 없으므로, setter
+		//생성자 없으므로, setter(property에 설정)
 		student.setWeight(80);
 		student.setHeight(180);
 		return student;
@@ -30,10 +30,10 @@ public class ApplicationConfig {
 		hobbys.add("달리기");
 		hobbys.add("자전거");
 		
-		//student: bean 이름
+		//생성자에 설정(constructor)
 		Student student = new Student("김유신", 25, hobbys);
 		
-		//생성자 만들지 않았으므로, setter로 설정
+		//생성자 없으므로, setter(property에 설정)
 		student.setWeight(60);
 		student.setHeight(150);
 		return student;
